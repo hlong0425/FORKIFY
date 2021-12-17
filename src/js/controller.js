@@ -2,7 +2,7 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { loadRecipe } from './model.js';
-import { Fraction } from 'fractional';
+
 import * as model from './model.js';     //MODEL
 import recipeView from './view/recipeView.js'; //VIEW---recipe
 import resultView from './view/resultView.js'; //VIEW---result
@@ -11,15 +11,7 @@ import View from './view/View.js';
 import paginationView from './view/paginationView.js';
 import bookmarksView from './view/bookmarksView.js';
 import addRecipeView from './view/addRecipeView.js';
-import previewView from './view/previewView.js';
 
-
-/*End Import Field*/
-
-
-const recipeContainer = document.querySelector('.recipe');
-
-const searchField = document.querySelector('search__field');
 
 
 // https://forkify-api.herokuapp.com/v2
@@ -53,6 +45,7 @@ const controlRecipes = async function () {
 
   }
   catch (error) {
+    console.log(error);
     recipeView.renderError(error.message);
   }
 }

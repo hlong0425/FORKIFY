@@ -89,10 +89,6 @@ export default class View {
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
-
-
-
-
 }
 
 
@@ -102,17 +98,6 @@ export default class View {
 
 
 
-
-
-  // if (!newEl.isEqualNode(curEl) && newEl.hasAttribute('data-update-to')) {
-      //   console.log(`------------ ${i}  -----------`);
-      //   console.log(newEl.attributes);
-      //   // [...newEl.attributes].forEach(attr => {
-      //   //   curEl.setAttribute(attr.name, attr.value);
-      //   // })
-      //   const newAttr = newEl.getAttribute('data-update-to');
-      //   curEl.setAttribute('data-update-to', newAttr);
-      // }
 
 
 

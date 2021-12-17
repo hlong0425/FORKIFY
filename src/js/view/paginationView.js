@@ -16,7 +16,6 @@ class PaginationView extends View {
     _generateMarkup() {
         const currentPage = this._data.page;
         const numPages = Math.ceil(this._data.results.length / this._data.resultsPerPage);
-        console.log(`numPage: ${numPages}`);
 
         if (currentPage === 1) {
             if (currentPage < numPages) return this._pageOneOtherPage(currentPage);
