@@ -1,2 +1,0 @@
-# FORKIFY
- JS Project
